@@ -1,0 +1,11 @@
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\bin\Debug\net8.0\BikeStoreQueryWithDapper.Domain.deps.json
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\bin\Debug\net8.0\BikeStoreQueryWithDapper.Domain.dll
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\bin\Debug\net8.0\BikeStoreQueryWithDapper.Domain.pdb
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\BikeStoreQueryWithDapper.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\BikeStoreQueryWithDapper.Domain.AssemblyInfoInputs.cache
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\BikeStoreQueryWithDapper.Domain.AssemblyInfo.cs
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\BikeStoreQueryWithDapper.Domain.csproj.CoreCompileInputs.cache
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\BikeStoreQueryWithDapper.Domain.dll
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\refint\BikeStoreQueryWithDapper.Domain.dll
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\BikeStoreQueryWithDapper.Domain.pdb
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\ref\BikeStoreQueryWithDapper.Domain.dll

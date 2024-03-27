@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BikeStoreQueryWithDapper.Api.props" />
+</Project>
