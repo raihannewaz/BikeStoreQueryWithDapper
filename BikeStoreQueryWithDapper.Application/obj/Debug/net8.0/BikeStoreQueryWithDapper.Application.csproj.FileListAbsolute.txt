@@ -13,3 +13,4 @@ D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDa
 D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Application\obj\Debug\net8.0\refint\BikeStoreQueryWithDapper.Application.dll
 D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Application\obj\Debug\net8.0\BikeStoreQueryWithDapper.Application.pdb
 D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Application\obj\Debug\net8.0\ref\BikeStoreQueryWithDapper.Application.dll
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Application\obj\Debug\net8.0\BikeStoreQueryWithDapper.Application.sourcelink.json

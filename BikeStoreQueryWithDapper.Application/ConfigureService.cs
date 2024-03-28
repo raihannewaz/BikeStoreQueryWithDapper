@@ -1,5 +1,6 @@
 ﻿using BikeStoreQueryWithDapper.Application.CommonCQRS;
 using BikeStoreQueryWithDapper.Application.CommonCQRS.Queries;
+using BikeStoreQueryWithDapper.Domain.CommonQuery;
 using BikeStoreQueryWithDapper.Domain.OrderItemEntity;
 using BikeStoreQueryWithDapper.Domain.StockEntity;
 using MediatR;
@@ -22,8 +23,9 @@ namespace BikeStoreQueryWithDapper.Application
             {
                 c.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly());
             });
+
+
             services.AddTransient<IRequestHandler<GetCommonQuery<CommonDTO>,List<CommonDTO>>,GetCommonQueryHandler<CommonDTO>>();
-            services.AddTransient<IRequestHandler<GetCommonQuery<Stock>,List<Stock>>,GetCommonQueryHandler<Stock>>();
 
             return services;
         }

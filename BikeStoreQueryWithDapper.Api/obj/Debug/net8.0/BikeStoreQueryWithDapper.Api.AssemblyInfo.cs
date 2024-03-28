@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BikeStoreQueryWithDapper.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d692952982f69ca0b8a5b7b4cc5d031d607c0372")]
 [assembly: System.Reflection.AssemblyProductAttribute("BikeStoreQueryWithDapper.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BikeStoreQueryWithDapper.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

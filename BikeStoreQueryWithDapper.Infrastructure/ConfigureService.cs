@@ -1,10 +1,9 @@
-﻿using BikeStoreQueryWithDapper.Application.CommonCQRS;
+﻿
 using BikeStoreQueryWithDapper.Domain.BrandEntity;
 using BikeStoreQueryWithDapper.Domain.CategoryEntity;
-using BikeStoreQueryWithDapper.Domain.CommonQueryInterface;
+using BikeStoreQueryWithDapper.Domain.CommonQuery;
 using BikeStoreQueryWithDapper.Domain.CustomerEntity;
-using BikeStoreQueryWithDapper.Domain.OrderItemEntity;
-using BikeStoreQueryWithDapper.Domain.StockEntity;
+
 using BikeStoreQueryWithDapper.Infrastructure.Brand;
 using BikeStoreQueryWithDapper.Infrastructure.Category;
 using BikeStoreQueryWithDapper.Infrastructure.CommonQueryRepo;
@@ -37,8 +36,8 @@ namespace BikeStoreQueryWithDapper.Infrastructure
             services.AddScoped(typeof(IBrandRepository) ,typeof (BrandRepository));
             services.AddScoped(typeof(ICategoryRepository) ,typeof (CategoryRepository));
             services.AddScoped(typeof(ICustomerRepository) ,typeof (CustomerRepository));
-            services.AddScoped(typeof(ICommonQueryInterface<CommonDTO>) ,typeof (CommonQueryRepository<CommonDTO>));
-            services.AddScoped(typeof(ICommonQueryInterface<Stock>) ,typeof (CommonQueryRepository<Stock>));
+            services.AddScoped(typeof(ICommonQueryInterface) ,typeof (CommonQueryRepository));
+
 
 
             return services;

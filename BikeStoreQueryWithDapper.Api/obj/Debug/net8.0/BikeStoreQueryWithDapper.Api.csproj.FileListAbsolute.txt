@@ -84,3 +84,4 @@ D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDa
 D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Api\obj\Debug\net8.0\BikeStoreQueryWithDapper.Api.pdb
 D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Api\obj\Debug\net8.0\BikeStoreQueryWithDapper.Api.genruntimeconfig.cache
 D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Api\obj\Debug\net8.0\ref\BikeStoreQueryWithDapper.Api.dll
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Api\obj\Debug\net8.0\BikeStoreQueryWithDapper.Api.sourcelink.json

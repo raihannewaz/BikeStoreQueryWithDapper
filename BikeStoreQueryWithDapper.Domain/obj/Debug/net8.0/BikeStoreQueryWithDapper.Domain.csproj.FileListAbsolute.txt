@@ -9,3 +9,5 @@ D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDa
 D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\refint\BikeStoreQueryWithDapper.Domain.dll
 D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\BikeStoreQueryWithDapper.Domain.pdb
 D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\ref\BikeStoreQueryWithDapper.Domain.dll
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\BikeStoreQueryWithDapper.Domain.sourcelink.json
+D:\Raihan\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper\BikeStoreQueryWithDapper.Domain\obj\Debug\net8.0\BikeStoreQueryWithDapper.Domain.csproj.AssemblyReference.cache
