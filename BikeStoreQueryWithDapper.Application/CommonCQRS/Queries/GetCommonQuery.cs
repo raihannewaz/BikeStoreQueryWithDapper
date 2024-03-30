@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace BikeStoreQueryWithDapper.Application.CommonCQRS.Queries
 {
-    public class GetCommonQuery<T> : IRequest<List<T>> where T : class
+    public class GetCommonQuery<T> : IRequest<IEnumerable<T>> where T : class
     {
 
         public string? Query { get; set; }
@@ -24,7 +24,9 @@ namespace BikeStoreQueryWithDapper.Application.CommonCQRS.Queries
                                    p.model_year, p.list_price, sto.store_id, sto.quantity, s.store_name, s.phone, s.email, s.street, s.city , s.state, s.zip_code 
                                    FROM production.categories AS c INNER JOIN production.brands AS b ON c.category_id = b.brand_id 
                                    INNER JOIN production.products AS p ON c.category_id = p.category_id INNER JOIN production.stocks AS sto ON p.product_id = sto.product_id 
-                                   INNER JOIN sales.stores AS s ON sto.store_id = s.store_id) SELECT store_name, product_name, quantity 
+                                   INNER JOIN sales.stores AS s ON sto.store_id = s.store_id)
+
+                                   SELECT store_name, product_name, quantity 
                                    FROM CTE_StockTableData Where model_year = 2018";
 
 
@@ -79,6 +81,28 @@ namespace BikeStoreQueryWithDapper.Application.CommonCQRS.Queries
                                                                WHERE o_inner.order_date = o.order_date GROUP BY oi_inner.product_id) AS Subquery)
                                                   ORDER BY o.order_date";
         }
+
+
+
+
+
+        //public string customerOrdersById(int id)
+        //{
+        //    return @$"SELECT c.*, o.*, oi.*
+        //                FROM sales.customers c INNER JOIN sales.orders o ON c.customer_id = o.customer_id 
+        //                INNER JOIN  sales.order_items oi ON o.order_id = oi.order_id 
+        //                WHERE c.customer_id = {id}";
+        //}
+
+
+        public string customerOrdersById(int id)
+        {
+            return @$"SELECT * FROM sales.customers where customer_id = {id}
+                      SELECT * From sales.orders where customer_id = {id}
+                      SELECT * FROM sales.order_items
+                      select * from production.products";
+        }
+
 
     }
 }

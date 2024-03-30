@@ -21,5 +21,5 @@ public partial class OrderItem
 
     public Order? Order { get; set; }
 
-    public Product? Product { get; set; }
+    public List<Product>? Product { get; set; }
 }

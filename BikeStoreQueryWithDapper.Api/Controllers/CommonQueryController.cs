@@ -1,5 +1,8 @@
 ﻿using BikeStoreQueryWithDapper.Application.CommonCQRS.Queries;
+using BikeStoreQueryWithDapper.Domain.CategoryEntity;
 using BikeStoreQueryWithDapper.Domain.CommonQuery;
+using BikeStoreQueryWithDapper.Domain.CustomerEntity;
+using BikeStoreQueryWithDapper.Domain.ProductEntity;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -62,11 +65,39 @@ namespace BikeStoreQueryWithDapper.Api.Controllers
         }
 
 
+        [HttpGet("customer-orders-by-id/{id}")]
+        public async Task<IActionResult> GetCustomerOrders(int id)
+        {
+
+            var query = new GetCommonQuery<Customer>
+            {
+                Query = "customerOrdersById",
+                id = id,
+            };
+
+            var data = await _sender.Send(query);
+
+            //var swaggerData = data.Select(dto => new
+            //{
+            //    dto.customer_name,
+            //    dto.email,
+            //    dto.product_name,
+            //    dto.quantity,
+            //    dto.list_price,
+            //    dto.discount,
+            //    dto.order_date,
+            //    dto.shipped_date
+            //}).ToList();
+
+            return Ok(data);
+        }
+
+
         [HttpGet("customer-orders/{id}/{param}")]
         public async Task<IActionResult> GetCustomerOrders(int id, string param)
         {
 
-            var query = new GetCommonQuery<CommonDTO>
+            var query = new GetCommonQuery<Customer>
             {
                 Query = "customerOrdersByOutParam",
                 id = id,
@@ -75,20 +106,21 @@ namespace BikeStoreQueryWithDapper.Api.Controllers
 
             var data = await _sender.Send(query);
 
-            var swaggerData = data.Select(dto => new
-            {
-                dto.customer_name,
-                dto.email,
-                dto.product_name,
-                dto.quantity,
-                dto.list_price,
-                dto.discount,
-                dto.order_date,
-                dto.shipped_date
-            }).ToList();
+            //var swaggerData = data.Select(dto => new
+            //{
+            //    dto.customer_name,
+            //    dto.email,
+            //    dto.product_name,
+            //    dto.quantity,
+            //    dto.list_price,
+            //    dto.discount,
+            //    dto.order_date,
+            //    dto.shipped_date
+            //}).ToList();
 
-            return Ok(swaggerData);
+            return Ok(data);
         }
+
 
 
         [HttpGet("best-sale-product-by-date")]
@@ -158,6 +190,24 @@ namespace BikeStoreQueryWithDapper.Api.Controllers
             }).ToList();
 
             return Ok(swaggerData);
+        }
+
+
+
+        [HttpGet("products-categories/{id}")]
+        public async Task<IActionResult> GetProductWithCat(int id)
+        {
+
+            var query = new GetCommonQuery<Category>
+            {
+                Query = "productCat",
+                id=id,
+            };
+
+            var data = await _sender.Send(query);
+
+
+            return Ok(data);
         }
     }
 }

@@ -53,6 +53,22 @@
   {
     "ContainingType": "BikeStoreQueryWithDapper.Api.Controllers.CommonQueryController",
     "Method": "GetCustomerOrders",
+    "RelativePath": "api/CommonQuery/customer-orders-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BikeStoreQueryWithDapper.Api.Controllers.CommonQueryController",
+    "Method": "GetCustomerOrders",
     "RelativePath": "api/CommonQuery/customer-orders/{id}/{param}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -79,6 +95,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BikeStoreQueryWithDapper.Api.Controllers.CommonQueryController",
+    "Method": "GetProductWithCat",
+    "RelativePath": "api/CommonQuery/products-categories/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

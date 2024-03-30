@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BikeStoreQueryWithDapper.Domain.OrderEntity;
+using System;
 using System.Collections.Generic;
 
 namespace BikeStoreQueryWithDapper.Domain.CustomerEntity;
@@ -22,5 +23,7 @@ public partial class Customer
     public string? state { get; set; }
 
     public string? zip_Code { get; set; }
+
+    public List<Order>? Order {  get; set; }
 
 }

@@ -30,4 +30,6 @@ public partial class Order
     public Staff? Staff { get; set; }
 
     public Store? Store { get; set; }
+
+    public List<OrderItem>? OrderItem { get; set; }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BikeStoreQueryWithDapper.Domain.ProductEntity;
+using System;
 using System.Collections.Generic;
 
 namespace BikeStoreQueryWithDapper.Domain.CategoryEntity;
@@ -9,4 +10,5 @@ public partial class Category
 
     public string? category_name { get; set; }
 
+    public List<Product>? Product { get; set; } 
 }

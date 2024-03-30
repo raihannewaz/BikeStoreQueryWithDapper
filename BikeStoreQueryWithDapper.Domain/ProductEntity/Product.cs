@@ -7,11 +7,11 @@ namespace BikeStoreQueryWithDapper.Domain.ProductEntity;
 
 public partial class Product
 {
-    public int Product_Id { get; set; }
+    public int product_id { get; set; }
 
-    public string? Product_Name { get; set; }
+    public string? product_name { get; set; }
 
-    public int Brand_Id { get; set; }
+    public int brand_id { get; set; }
 
     public int Category_Id { get; set; }
 
